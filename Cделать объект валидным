@@ -1,0 +1,35 @@
+
+public class Cat {
+    private String name;
+    public int age;
+    private int weight;
+    public String address;
+    private String color;
+
+    public void initialize(String name) {
+        this.name = "Pip";
+        this.age = 2;
+        this.weight = 3;
+        this.color = "pink";
+    }
+
+    public void initialize(String name, int age, int weigh) {
+        this.name = "Bob";
+        this.age = 4;
+        this.weight = 5;
+        this.color = "grey";
+    }
+
+    public void initialize(int weigh, String color) {
+        this.age = 7;
+        this.weight = 1;
+        this.color = "black";
+    }
+
+    public void initialize(int weigh, String color, String address) {
+        this.weight = 6;
+        this.color = "white";
+        this.address = "address";
+        this.age = 4;
+    }
+}

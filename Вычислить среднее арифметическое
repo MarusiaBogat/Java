@@ -1,0 +1,25 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+/* 
+Среднее арифметическое
+*/
+
+public class Solution {
+    public static void main(String[] args) throws Exception {
+         BufferedReader read = new BufferedReader(new InputStreamReader(System.in));
+        double total = 0;
+        int cout = 0;
+        int sum = 0;
+        while (true) {
+            int num = Integer.parseInt(read.readLine());
+            if (num == -1) {
+                break;
+            }
+            cout++;
+            sum += num;
+            total = (double) sum / cout;
+        }
+        System.out.println(total);
+    }
+}

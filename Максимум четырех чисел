@@ -1,0 +1,17 @@
+/* 
+Максимум четырех чисел
+*/
+
+public class Solution {
+    public static void main(String[] args) throws Exception {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+      int first = Integer.parseInt(reader.readLine());
+        int second = Integer.parseInt(reader.readLine());
+        int third = Integer.parseInt(reader.readLine());
+        int fourth = Integer.parseInt(reader.readLine());
+        int answer = Math.min( Math.min(first, second), Math.min(third,fourth));
+        int answer2 = Math.max( Math.max(first, second), Math.max(third,fourth));
+        if (answer>=answer2);{
+        System.out.println(answer2);}
+    }
+}

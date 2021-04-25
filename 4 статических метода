@@ -1,0 +1,38 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+/* 
+Класс ConsoleReader
+*/
+
+public class ConsoleReader {
+    public static String readString() throws Exception {
+                BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+                String s = reader.readLine();
+                return s;
+        }
+        public static int readInt() throws Exception {
+                int n;
+                n  = Integer.parseInt(new BufferedReader (new InputStreamReader(System.in)).readLine());
+                return n;
+        }
+        public static double readDouble() throws Exception {
+                double x;
+                x  = Double.parseDouble(new BufferedReader (new InputStreamReader(System.in)).readLine());
+                return x;
+
+
+        }
+
+        public static boolean readBoolean() throws Exception {
+                boolean x;
+                x = Boolean.parseBoolean(new BufferedReader (new InputStreamReader(System.in)).readLine());
+                return x;
+        }
+
+        public static void main(String[] args) throws Exception {
+        //
+
+
+        }
+}

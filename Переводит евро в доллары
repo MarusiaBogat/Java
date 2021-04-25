@@ -1,0 +1,16 @@
+/* 
+Обмен валют
+*/
+
+public class Solution {
+    public static void main(String[] args) {
+       // eur =  1,25;
+       // usd = 0,85;
+        System.out.println(convertEurToUsd(1.75,0.85));
+        System.out.println(convertEurToUsd(0.85,1.75));
+    }
+
+    public static double convertEurToUsd(int eur, double exchangeRate) {
+       return eur * exchangeRate;
+    }
+}
